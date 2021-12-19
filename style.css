@@ -1,0 +1,19 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(100, auto);
+    grid-template-rows: repeat(100, auto);
+    background-color: #f9f9f9;
+    border: 1px solid #cbcbcb;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    width: 800px;
+    max-height: 800px;
+    height: 800px;
+}
+
+.pixel {
+    background-color: gray;
+}
