@@ -1,3 +1,20 @@
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+
+}
+
+button {
+    padding: 10px;
+    background-color: ;
+}
+
 .board {
     display: grid;
     grid-template-columns: repeat(100, auto);
