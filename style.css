@@ -1,7 +1,7 @@
 .board {
     display: grid;
-    grid-template-columns: repeat(100, auto);
-    grid-template-rows: repeat(100, auto);
+    grid-template-columns: repeat(64, auto);
+    grid-template-rows: repeat(64, auto);
     background-color: #f9f9f9;
     border: 1px solid #cbcbcb;
     border-radius: 5px;
@@ -13,7 +13,13 @@
     max-height: 800px;
     height: 800px;
 }
-
+h1 {
+    text-align: center;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+}
 .pixel {
     background-color: gray;
 }

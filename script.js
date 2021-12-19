@@ -1,7 +1,7 @@
 const board = document.getElementsByClassName('board')[0];
 let clr = "lol";
-
-for (let i = 0; i < 100*100; i++) {
+let x = 64;
+for (let i = 0; i < square(sessionStorage.getItem("gridSize")); i++) {
     const pixels = document.createElement('div');
     pixels.classList.add('pixel');
     board.appendChild(pixels);
@@ -50,3 +50,19 @@ window.addEventListener("keydown", (e) => {
         clr = "gray"
     }
 });
+
+function square(x) {
+    return x * x;
+}
+
+
+function getGridSize() {
+    let gridSize = prompt("Enter a number for the grid size");
+    sessionStorage.setItem("gridSize", gridSize);
+    location.reload();
+}
+
+//console.log(sessionStorage.getItem("gridSize"));
+
+board.setAttribute("style", "grid-template-columns: repeat(" + sessionStorage.getItem("gridSize") + ", auto); grid-template-rows: repeat(" + sessionStorage.getItem("gridSize") + ", auto);");
+console.log(sessionStorage.getItem("gridSize"));
