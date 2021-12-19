@@ -25,3 +25,7 @@ document.querySelectorAll("button").forEach(element => {
         if (element.id == "erase") clr = "gray";
     })
 });
+
+document.getElementById("reload").addEventListener("click", () => {
+    location.reload();
+});
